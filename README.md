@@ -2,7 +2,7 @@
 
 This project demonstrates how to:
 
-- Call with [EVM runtime](https://github.com/movemntdev/movement-v2/blob/main/aptos-move/framework/aptos-framework/sources/evm/evm.move) on Movement Subnet.
+- Call with [EVM runtime](https://github.com/movemntdev/movement-v2/blob/main/aptos-move/framework/aptos-framework/sources/evm/evm.move) on Movement.
 - Implement partial Ethereum RPC methods to interact with Solidity contracts using MetaMask and Remix.
 - Deploy Solidity contracts using Remix.
 - Perform contract read and write operations.
@@ -33,14 +33,12 @@ The following RPC methods have been implemented to ensure interaction with Solid
 
 ### Start Your EVM RPC
 
-> If you don't want to start the EVM RPC yourself, you can found the link at `https://github.com/movemntdev/movement-v2`
-
 - Set environment variables
 ```bash
 mv .env.example .env
 ```
 
-- `NODE_URL`: The subnet restful endpoint provided by the movement subnet`
+- `NODE_URL`: The restful endpoint provided by the movement`
 
 - `EVM_SENDER`: The private key of a account to send EVM transactions to the Move. Please ensure that the account has enough MOVE native token to pay for the gas fee.(At least 10)
 
